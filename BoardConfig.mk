@@ -96,3 +96,31 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+# SHRP specific build flags
+SHRP_PATH := device/samsung/m31
+
+# Maintainer name
+SHRP_MAINTAINER := sparxfusion
+
+# Device codename
+SHRP_DEVICE_CODE := a50
+
+# put this 0 if device has no EDL mode
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+# Put 0 to disable flashlight
+SHRP_FLASH := 0
+# These are led paths, find yours then put here
+#SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
+#SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
+#SHRP_FONP_3 := /sys/class/leds/led:switch/brightness
+# Max Brightness of LED
+SHRP_FLASH_MAX_BRIGHTNESS := 200
+# Check your device's recovery path, dont use blindly
+SHRP_REC := /dev/block/platform/13520000.ufs/by-name/recovery
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := Fake_A/B
+SHRP_NO_SAR_AUTOMOUNT := true
