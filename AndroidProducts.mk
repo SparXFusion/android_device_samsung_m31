@@ -18,3 +18,6 @@
 
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/omni_m31.mk
+
+COMMON_LUNCH_CHOICES := \
+   omni_m31-eng
